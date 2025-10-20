@@ -1,0 +1,201 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Edukasi - Food Insecurity</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+
+  <!-- ===== HEADER ===== -->
+  <header>
+    <h1>Food Insecurity</h1>
+    <p>Bersama Lawan Kelaparan</p>
+    <nav>
+      <a href="home.html">Beranda</a>
+      <a href="edukasi.html" class="active">Edukasi</a>
+      <a href="kampanye.html">Kampanye</a>
+      <a href="tentang.html">Tentang</a>
+    </nav>
+  </header>
+
+  <!-- ===== ISI EDUKASI ===== -->
+  <main class="edukasi">
+
+    <!-- Bagian 1: Kartu Edukasi -->
+    <section class="edukasi-cards">
+      <h2>📚 Fakta Penting Tentang Ketahanan Pangan 📚</h2>
+      <div class="card-grid">
+        <div class="card pink">
+          <h3>🍚 Kelaparan Global</h3>
+          <p>Lebih dari 735 juta orang di dunia masih kekurangan gizi kronis akibat ketimpangan pangan.</p>
+        </div>
+        <div class="card yellow">
+          <h3>🌾 Ketergantungan Impor</h3>
+          <p>Banyak negara berkembang bergantung pada impor bahan pangan pokok untuk memenuhi kebutuhan nasional.</p>
+        </div>
+        <div class="card green">
+          <h3>♻️ Dampak Perubahan Iklim</h3>
+          <p>Perubahan iklim menyebabkan gagal panen dan menurunkan produktivitas pertanian global.</p>
+        </div>
+        <div class="card blue">
+          <h3>🥦 Akses Pangan Sehat</h3>
+          <p>Banyak keluarga kesulitan mengakses makanan bergizi karena faktor ekonomi dan distribusi.</p>
+        </div>
+        <div class="card peach">
+          <h3>👩‍🌾 Petani Kecil</h3>
+          <p>Petani kecil berperan penting dalam produksi pangan lokal, namun sering tidak mendapat dukungan cukup.</p>
+        </div>
+        <div class="card purple">
+          <h3>🤝 Solusi Bersama</h3>
+          <p>Kolaborasi antara pemerintah, masyarakat, dan lembaga global sangat penting untuk mengatasi food insecurity.</p>
+        </div>
+      </div>
+    </section>
+
+    <!-- Bagian 2: Kuis Interaktif -->
+    <section class="quiz-section">
+      <h2>🎯 Yuk, Uji Pengetahuanmu! 🎯</h2>
+      <p>Jawab beberapa pertanyaan singkat tentang ketahanan pangan di bawah ini!</p>
+
+      <div id="quiz-box">
+        <div id="question"></div>
+        <ul id="options"></ul>
+        <button id="next-btn" style="display: none;">Pertanyaan Berikutnya</button>
+        <p id="result"></p>
+      </div>
+    </section>
+
+    <!-- Bagian 3: Artikel Edukasi -->
+    <section class="artikel">
+      <h2>📰 Artikel & Berita Edukasi 📰</h2>
+      <div class="card-grid">
+        
+        <div class="card pink">
+          <img src="kelaparan_dunia.jpeg" alt="Kelaparan Dunia" style="width:100%;border-radius:15px;">
+          <h3>Ketahanan Pangan Global</h3>
+          <p>Bagaimana negara-negara dunia bekerja sama mengatasi ancaman kelaparan di masa depan.</p>
+          <a href="https://www.setneg.go.id/baca/index/hadapi_krisis_pangan_global_pemerintah_pastikan_produksi_beras_nasional_surplus_1?utm_source=chatgpt.com" target="_blank"><button>Baca Selengkapnya</button></a>
+        </div>
+
+        <div class="card yellow">
+          <img src="petani_lokal.jpg" alt="Petani Lokal" style="width:100%;border-radius:15px;">
+          <h3>Peran Petani Lokal</h3>
+          <p>Pertanian berkelanjutan dimulai dari dukungan kepada petani kecil yang menjadi tulang punggung pangan.</p>
+          <a href="https://tuxedovation.inovasi.bskdn.kemendagri.go.id/detail_inovasi/161972?utm_source=chatgpt.com" target="_blank"><button>Baca Selengkapnya</button></a>
+        </div>
+
+        <div class="card green">
+          <img src="iklim.jpeg" alt="Iklim dan Pangan" style="width:100%;border-radius:15px;">
+          <h3>Iklim dan Ketahanan Pangan</h3>
+          <p>Dampak perubahan iklim semakin terasa pada rantai pasokan pangan dunia.</p>
+          <a href="https://www.worldbank.org/en/topic/climate-smart-agriculture" target="_blank"><button>Baca Selengkapnya</button></a>
+        </div>
+
+        <div class="card blue">
+          <img src="akses_pangan.jpg" alt="Akses Pangan" style="width:100%;border-radius:15px;">
+          <h3>Akses Pangan Sehat</h3>
+          <p>Kesenjangan ekonomi masih menjadi penghalang utama dalam memperoleh makanan bergizi.</p>
+          <a href="https://www.reuters.com/world/asia-pacific/indonesia-expand-farmland-by-3-mln-hectares-self-sufficiency-drive-2024-10-10/?utm_source=chatgpt.com" target="_blank"><button>Baca Selengkapnya</button></a>
+        </div>
+
+        <div class="card peach">
+          <img src="pertanian_modern.jpeg" alt="Pertanian Modern" style="width:100%;border-radius:15px;">
+          <h3>Inovasi Pertanian Modern</h3>
+          <p>Teknologi baru membantu meningkatkan produktivitas pertanian dan efisiensi pangan global.</p>
+          <a href="https://farmonaut.com/asia/inovasi-teknologi-pertanian-tingkatkan-daya-saing-petani?utm_source=chatgpt.com" target="_blank"><button>Baca Selengkapnya</button></a>
+        </div>
+
+        <div class="card purple">
+          <img src="kolaborasi_sosial.jpeg" alt="Kolaborasi Sosial" style="width:100%;border-radius:15px;">
+          <h3>Kolaborasi Masyarakat</h3>
+          <p>Gerakan sosial dan komunitas lokal berperan besar dalam mengurangi kelaparan di daerah terpencil.</p>
+          <a href="https://www.new-indonesia.org/hak-atas-pangan-bukan-sumber-cuan/?utm_source=chatgpt.com" target="_blank"><button>Baca Selengkapnya</button></a>
+        </div>
+
+      </div>
+    </section>
+
+  </main>
+
+  <!-- ===== FOOTER ===== -->
+  <footer>
+    <p>&copy; 2025 Food Insecurity - Bersama Lawan Kelaparan 🌾</p>
+  </footer>
+
+  <!-- ===== SCRIPT KUIS ===== -->
+  <script>
+    const questions = [
+      {
+        question: "Apa penyebab utama kelaparan di dunia saat ini?",
+        options: ["Kekurangan sumber daya alam", "Distribusi pangan yang tidak merata", "Tidak ada lahan pertanian"],
+        answer: 1
+      },
+      {
+        question: "Siapa yang paling berperan dalam produksi pangan lokal?",
+        options: ["Perusahaan besar", "Petani kecil", "Investor asing"],
+        answer: 1
+      },
+      {
+        question: "Apa dampak perubahan iklim terhadap pertanian?",
+        options: ["Meningkatkan hasil panen", "Tidak berpengaruh", "Menyebabkan gagal panen"],
+        answer: 2
+      }
+    ];
+
+    let currentQuestion = 0;
+    let score = 0;
+
+    const questionEl = document.getElementById("question");
+    const optionsEl = document.getElementById("options");
+    const resultEl = document.getElementById("result");
+    const nextBtn = document.getElementById("next-btn");
+
+    function showQuestion() {
+      const q = questions[currentQuestion];
+      questionEl.innerHTML = `<strong>Pertanyaan ${currentQuestion + 1}:</strong> ${q.question}`;
+      optionsEl.innerHTML = "";
+      resultEl.textContent = "";
+      nextBtn.style.display = "none";
+
+      q.options.forEach((opt, index) => {
+        const btn = document.createElement("button");
+        btn.textContent = opt;
+        btn.onclick = () => checkAnswer(index);
+        optionsEl.appendChild(btn);
+      });
+    }
+
+    function checkAnswer(selected) {
+      const q = questions[currentQuestion];
+      if (selected === q.answer) {
+        score++;
+        resultEl.textContent = "✅ Jawaban benar!";
+      } else {
+        resultEl.textContent = "❌ Jawaban salah!";
+      }
+      nextBtn.style.display = "inline-block";
+    }
+
+    nextBtn.onclick = () => {
+      currentQuestion++;
+      if (currentQuestion < questions.length) {
+        showQuestion();
+      } else {
+        showResult();
+      }
+    };
+
+    function showResult() {
+      questionEl.textContent = `Kuis selesai! 🎉`;
+      optionsEl.innerHTML = "";
+      resultEl.textContent = `Skor kamu: ${score} dari ${questions.length}`;
+      nextBtn.style.display = "none";
+    }
+
+    showQuestion();
+  </script>
+
+</body>
+</html>

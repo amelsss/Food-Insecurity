@@ -1,0 +1,490 @@
+/* ======================= UMUM ======================= */
+body {
+  font-family: "Poppins", sans-serif;
+  margin: 0;
+  background-color: #fdfdfd;
+  color: #333;
+  line-height: 1.6;
+}
+
+h1, h2, h3 {
+  font-weight: 700;
+}
+
+img {
+  max-width: 100%;
+  border-radius: 15px;
+}
+
+/* ======================= HEADER ======================= */
+header {
+  background-color: #a8df8e; /* hijau lembut */
+  text-align: center;
+  padding: 25px 10px;
+  border-radius: 0 0 15px 15px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+header h1 {
+  margin: 0;
+  color: #2f4f1f;
+  font-size: 28px;
+  font-weight: 700;
+}
+
+header p {
+  margin: 5px 0 10px;
+  color: #3e6b2e;
+  font-size: 13px;
+}
+
+nav {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 15px;
+  margin-top: 10px;
+}
+
+nav a {
+  display: inline-block;
+  text-decoration: none;
+  color: #2f4f1f;
+  font-weight: 600;
+  transition: 0.3s;
+}
+
+nav a:hover,
+nav a.active {
+  text-decoration: underline;
+}
+
+/* ======================= FOOTER ======================= */
+footer {
+  background-color: #a8df8e;
+  text-align: center;
+  padding: 15px;
+  margin-top: 60px;
+  color: #2f4f1f;
+  border-radius: 15px 15px 0 0;
+  font-size: 14px;
+  font-weight: 600;
+}
+
+/* ======================= HOME ======================= */
+.hero {
+  text-align: center;
+  padding: 60px 20px 40px;
+}
+
+.hero h2 {
+  font-size: 2rem;
+  color: #214a2d;
+  margin-bottom: 15px;
+}
+
+.hero p {
+  font-size: 1.1rem;
+  color: #555;
+  max-width: 650px;
+  margin: 0 auto;
+}
+
+.aksi {
+  text-align: center;
+  padding: 60px 20px 80px;
+}
+
+.aksi h2 {
+  font-size: 1.8rem;
+  color: #214a2d;
+  margin-bottom: 35px;
+}
+
+.aksi-container {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+  gap: 25px;
+  max-width: 1000px;
+  margin: 0 auto;
+}
+
+.aksi-box {
+  border-radius: 20px;
+  padding: 25px;
+  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.1);
+  transition: transform 0.2s, box-shadow 0.2s;
+}
+
+.aksi-box:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.15);
+}
+
+.aksi-box h3 {
+  font-size: 1.2rem;
+  color: #2f2f2f;
+  margin-bottom: 10px;
+}
+
+.aksi-box p {
+  color: #444;
+  margin: 0;
+}
+
+/* ===== WARNA KOTAK ===== */
+.pink { background-color: #ffe4e1; }
+.yellow { background-color: #fff5b7; }
+.green { background-color: #d6f5d6; }
+.peach { background-color: #ffeed6; }
+.purple { background-color: #f0e3ff; }
+.blue { background-color: #d6ecff; }
+
+/* ======================= EDUKASI ======================= */
+.edukasi {
+  text-align: center;
+  padding: 60px 20px 70px;
+}
+
+.edukasi h2 {
+  color: #214a2d;
+  font-size: 1.8rem;
+  margin-bottom: 35px;
+}
+
+.card-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+  gap: 25px;
+  max-width: 1000px;
+  margin: 0 auto;
+}
+
+.card {
+  padding: 25px;
+  border-radius: 20px;
+  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.1);
+  transition: transform 0.2s, box-shadow 0.2s;
+  text-align: left;
+}
+
+.card:hover {
+  transform: translateY(-6px);
+  box-shadow: 0 6px 15px rgba(0, 0, 0, 0.15);
+}
+
+.card h3 {
+  margin-top: 15px;
+  color: #214a2d;
+  font-size: 1.2rem;
+}
+
+.card p {
+  color: #444;
+  line-height: 1.5;
+  font-size: 0.95rem;
+}
+
+/* ===== QUIZ SECTION ===== */
+.quiz-section {
+  text-align: center;
+  max-width: 800px;
+  margin: 0 auto;
+  padding: 30px;
+  border-radius: 20px;
+  background-color: #f6fff6;
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.05);
+}
+
+.quiz-section p {
+  color: #444;
+  margin-bottom: 25px;
+}
+
+.quiz-section button {
+  background-color: #b8e5b0;
+  color: #214a2d;
+  border: none;
+  padding: 10px 20px;
+  border-radius: 8px;
+  cursor: pointer;
+  font-weight: 600;
+  transition: 0.2s;
+}
+
+.quiz-section button:hover {
+  background-color: #a5d79a;
+}
+
+#quiz-box {
+  margin-top: 25px;
+}
+
+#quiz-box ul {
+  list-style: none;
+  padding: 0;
+}
+
+#quiz-box li {
+  margin-bottom: 10px;
+}
+
+#quiz-box button {
+  width: 100%;
+  max-width: 400px;
+  margin: 8px auto;
+  display: block;
+  padding: 12px 20px;
+}
+
+/* ======================= KAMPANYE ======================= */
+.kampanye {
+  text-align: center;
+  padding: 60px 20px 80px;
+}
+
+.aksi-section h2,
+.aksi-komunitas h2 {
+  color: #214a2d;
+  font-size: 1.8rem;
+  margin-bottom: 20px;
+}
+
+.aksi-section p,
+.aksi-komunitas p {
+  color: #444;
+  max-width: 700px;
+  margin: 0 auto 40px;
+  line-height: 1.6;
+}
+
+.aksi-grid {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 30px;
+  justify-items: center;
+  max-width: 900px;
+  margin: 0 auto;
+}
+
+.aksi-card {
+  border-radius: 20px;
+  padding: 25px;
+  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.1);
+  transition: transform 0.25s, box-shadow 0.25s;
+  text-align: left;
+}
+
+.aksi-card:hover {
+  transform: translateY(-6px);
+  box-shadow: 0 6px 15px rgba(0, 0, 0, 0.15);
+}
+
+.aksi-card img {
+  width: 100%;
+  border-radius: 15px;
+  margin-bottom: 15px;
+}
+
+.aksi-card h3 {
+  color: #214a2d;
+  font-size: 1.2rem;
+  margin-bottom: 10px;
+}
+
+.aksi-card p {
+  color: #444;
+  margin-bottom: 15px;
+  line-height: 1.5;
+}
+
+.aksi-card button {
+  background-color: #b8e5b0;
+  color: #214a2d;
+  border: none;
+  padding: 10px 18px;
+  border-radius: 8px;
+  cursor: pointer;
+  font-weight: 600;
+  transition: background-color 0.25s;
+}
+
+.aksi-card button:hover {
+  background-color: #a5d79a;
+}
+
+.btn-link {
+  display: inline-block;
+  margin-top: 8px;
+  background-color: #b8e5b0;
+  color: #214a2d;
+  padding: 9px 18px;
+  border-radius: 8px;
+  font-weight: 600;
+  text-decoration: none;
+  transition: background-color 0.25s;
+}
+
+.btn-link:hover {
+  background-color: #a5d79a;
+}
+
+.aksi-komunitas {
+  margin-top: 80px;
+}
+
+/* RESPONSIF */
+@media (max-width: 768px) {
+  .aksi-grid {
+    grid-template-columns: 1fr;
+  }
+}
+
+/* ======================= TENTANG KAMI ======================= */
+.tentang {
+  background-color: #fdfbf6;
+  padding: 60px 20px;
+  color: #333;
+}
+
+.intro-tentang {
+  text-align: center;
+  max-width: 900px;
+  margin: 0 auto 50px;
+}
+
+.intro-tentang h2 {
+  font-size: 2.2rem;
+  color: #214a2d;
+  margin-bottom: 15px;
+}
+
+.intro-tentang p {
+  line-height: 1.8;
+  font-size: 1rem;
+  color: #444;
+}
+
+/* VISI MISI */
+.visi-misi {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 25px;
+  margin-bottom: 50px;
+}
+
+.container {
+  border-radius: 15px;
+  box-shadow: 0 3px 8px rgba(0,0,0,0.1);
+  padding: 25px;
+  text-align: left;
+  flex: 1 1 300px;
+  max-width: 420px;
+  transition: transform 0.3s;
+}
+
+.container:hover {
+  transform: translateY(-5px);
+}
+
+.visi { background-color: #d6f7e1; }
+.misi { background-color: #fff6c4; }
+
+.container h3 {
+  text-align: center;
+  margin-bottom: 15px;
+  color: #2a4e1e;
+}
+
+.container ul {
+  padding-left: 20px;
+}
+
+.container ul li {
+  margin-bottom: 10px;
+  line-height: 1.6;
+}
+
+/* DEVELOPER */
+.developer {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.dev-container {
+  background-color: #ffe0e0;
+  padding: 40px 25px;
+  border-radius: 20px;
+  text-align: center;
+  width: 350px;
+  box-shadow: 0 3px 8px rgba(0,0,0,0.1);
+}
+
+.dev-container img {
+  width: 110px;
+  height: 110px;
+  border-radius: 50%;
+  object-fit: cover;
+  border: 3px solid #fff;
+  box-shadow: 0 0 8px rgba(0,0,0,0.15);
+  margin-bottom: 15px;
+}
+
+.dev-container h3 {
+  margin: 8px 0 5px;
+  font-size: 18px;
+  color: #333;
+}
+
+.dev-container p {
+  font-size: 13px;
+  color: #555;
+  margin-bottom: 20px;
+}
+
+.contact-icons a {
+  display: inline-block;
+  margin: 5px 8px;
+  padding: 8px 15px;
+  border-radius: 20px;
+  color: white;
+  font-size: 14px;
+  text-decoration: none;
+  transition: 0.3s;
+}
+
+.contact-icons .wa { background-color: #25D366; }
+.contact-icons .ig { background-color: #E4405F; }
+
+.contact-icons a:hover { opacity: 0.8; }
+
+/* ======================= RESPONSIVE ======================= */
+@media (max-width: 768px) {
+  header h1 {
+    font-size: 22px;
+  }
+  .visi-misi {
+    flex-direction: column;
+    align-items: center;
+  }
+  .container {
+    max-width: 90%;
+  }
+  .dev-container {
+    width: 85%;
+  }
+}
+
+/* ======================= FIX KONSISTENSI SECTION ======================= */
+.hero, .edukasi, .kampanye, .tentang {
+  margin-top: 0 !important;
+  padding-top: 40px !important;
+}
+
+.main-container {
+  padding-top: 0 !important;
+}
